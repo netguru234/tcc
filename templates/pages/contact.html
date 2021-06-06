@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Start Page Banner -->
+        <div class="page-banner-area item-bg3">
+            <div class="container">
+                <div class="page-banner-content">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Banner -->
+
+        <!-- Start Contact Info Area -->
+        <section class="contact-info-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-info-box">
+                            <div class="icon">
+                                <i class="flaticon-office"></i>
+                            </div>
+
+                            <h3>Office</h3>
+                            <p>Leve Banking Corporation <br> {{ site_info.address }}</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-info-box">
+                            <div class="icon">
+                                <i class="flaticon-contact"></i>
+                            </div>
+
+                            <h3>Contact</h3>
+                            <p><a href="tel:{{ site_info.phone }}">{{ site_info.phone }}</a></p>
+                            <p><a href="mailto:{{ site_info.email }}">{{ site_info.email }}</a></p>
+                            <p><a href="#"></a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-info-box">
+                            <div class="icon">
+                                <i class="flaticon-time"></i>
+                            </div>
+
+                            <h3>Open hours</h3>
+                            <p>Mon–Fri: 8 AM - 9 PM</p>
+                            <p>Saturday: 8 AM - 8 PM</p>
+                            <p>Sunday: 8 AM - 5 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Info Area -->
+
+        <!-- Start Contact Area -->
+        <section class="contact-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Drop us message for any question(s)</h2>
+{#                    <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet consectetur adipiscing elit</p>#}
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactFormFilled" method="post" action="{% url 'contact' %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Full name</label>
+
+                                    <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name" placeholder="Full name">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Email</label>
+
+                                    <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email" placeholder="Email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Phone</label>
+
+                                    <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control" placeholder="Phone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Subject</label>
+
+                                    <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject" placeholder="Subject">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Your message</label>
+
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="5" required data-error="Write your message" placeholder="Message here."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="checkme" name="checkbox" required>
+                                    <label class="form-check-label" for="checkme">
+                                        Accept <a href="terms-of-service.html">Terms of Services</a> and <a href="privacy-policy.html">Privacy Policy.</a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 col-md-12">
+                                <button type="submit" class="default-btn">Send Message</button>
+{#                                <div id="msgSubmit" class="h3 text-center hidden"></div>#}
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Area -->
+
+
+{% endblock %}

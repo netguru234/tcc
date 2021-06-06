@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Start Page Banner -->
+        <div class="page-banner-area">
+            <div class="container">
+                <div class="page-banner-content">
+                    <h2>Credit cards</h2>
+                    <ul>
+                        <li>
+                            <a href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li>Credit cards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Banner -->
+
+        <!-- Start Overview Box Area -->
+        <section class="overview-box-area ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="overview-box-image">
+                            <img src="{% static 'assets/img/overview-box-1.png' %}" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="overview-box-content">
+                            <span>What is a credit card?</span>
+                            <h3>A credit card is a thin rectangular piece of plastic or metal purchased from a bank or financial services company.</h3>
+                            <p>Credit card issuers usually waive interest charges if the balance is paid in full each month, but typically will charge full interest on the entire outstanding balance from the date of each purchase if the total balance is not paid.
+                            </p>
+
+                            <ul class="overview-box-list">
+                                <li><i class="flaticon-check"></i> A credit card's grace period is the time the cardholder has to pay the balance before interest is assessed on the outstanding balance. Grace periods may vary, but usually range from 20 to 55 days depending on the type of credit card.</li>
+                                <li><i class="flaticon-check"></i> PARTIES INVOLVED Cardholder: The holder of the card used to make a purchase; the consumer. Card-issuing bank: The financial institution or other organization that issued the credit card to the cardholder.</li>
+                                <li><i class="flaticon-check"></i> A credit card register is a transaction register used to ensure the increasing balance owed from using a credit card is enough below the credit limit to deal with authorization holds and payments not yet received by the bank and to easily look up past transactions for reconciliation and budgeting.</li>
+{#                                <li><i class="flaticon-check"></i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</li>#}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Overview Box Area -->
+
+        <!-- Start Payment Box Area -->
+        <section class="payment-box-area ptb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="payment-box-content">
+                            <span>How do credit cards work?</span>
+                            <h3>Credit cards can be used to make purchases online or in stores and pay bills.</h3>
+                            <p>Business credit cards are specialized credit cards issued in the name of a registered business, and typically they can only be used for business purposes. Their use has grown in recent decades. In 1998, for instance, 37% of small businesses reported using a business credit card; by 2009, this number had grown to 64%.</p>
+
+                            <ul class="payment-box-list">
+                                <li><i class="flaticon-check"></i> A secured credit card is a type of credit card secured by a deposit account owned by the cardholder. Typically, the cardholder must deposit between 100% and 200% of the total amount of credit desired.</li>
+                                <li><i class="flaticon-check"></i> A digital card is a digital cloud-hosted virtual representation of any kind of identification card or payment card, such as a credit card.</li>
+                                <li><i class="flaticon-check"></i> A "prepaid credit card" is not a true credit card,[24] since no credit is offered by the card issuer: the cardholder spends money which has been "stored" via a prior deposit by the cardholder or someone else, such as a parent or employer.</li>
+                                <li><i class="flaticon-check"></i> The cardholder must pay a defined minimum portion of the amount owed by a due date, or may choose to pay a higher amount. The credit issuer charges interest on the unpaid balance if the billed amount is not paid in full (typically at a much higher rate than most other forms of debt).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="payment-box-image">
+                            <img src="{% static 'assets/img/payment-box.png' %}" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Payment Box Area -->
+
+        <!-- Start Credit Card Area -->
+        <section class="credit-card-area bg-ffffff pb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="credit-card-content">
+                            <span>Credit cards facility</span>
+                            <h3>We provide all the credit card facilities to our customers.</h3>
+                            <p>We provide customers with a variety of credit cards based on the convenience of work.</p>
+
+                            <ul class="credit-card-features">
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Standard credit cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Rewards credit cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Charge cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Subprime credit cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Limited purpose cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Balance transfer credit cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Student credit cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Secured credit cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Prepaid cards
+                                </li>
+                                <li>
+                                    <i class="flaticon-checkmark"></i> Business credit cards
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="credit-card-image-slider owl-carousel owl-theme">
+                            <div class="credit-card-image">
+                                <img src="{% static 'assets/img/credit-card/credit-card-1.png' %}" alt="image">
+                            </div>
+                            <div class="credit-card-image">
+                                <img src="{% static 'assets/img/credit-card/credit-card-2.png' %}" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Credit Card Area -->
+
+        <!-- Start Using Card Area -->
+        <section class="using-card-area pb-100">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="using-card-image">
+                            <img src="{% static 'assets/img/using-card.png' %}" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="using-card-content">
+                            <span>Using credit card</span>
+                            <h3>We can use our credit cards daily for all that work</h3>
+                            <p>When you use a credit card to make a purchase, you're essentially using the credit card company's money. You then pay that money back to the credit card company, with or without interest, depending on the timing of your payment. Your credit card company gives you a credit limit you can make purchases against.</p>
+
+                            <div class="using-card-inner-content">
+                                <div class="number">
+                                    <span>1</span>
+                                </div>
+
+                                <h4>Balance transfers</h4>
+                                <p>Credit card balance transfers are typically used by consumers who want to save money by moving high-interest credit card debt to another credit card with a lower interest rate. Balance transfer credit card offers typically come with an interest-free introductory period of six to 18 months, though some are longer.</p>
+                            </div>
+
+                            <div class="using-card-inner-content">
+                                <div class="number">
+                                    <span>2</span>
+                                </div>
+
+                                <h4>Everyday spending</h4>
+                                <p>The best cards for everyday spending.</p>
+                            </div>
+
+                            <div class="using-card-inner-content">
+                                <div class="number">
+                                    <span>3</span>
+                                </div>
+
+                                <h4>Large purchases</h4>
+                                <p>Using a large portion of your credit limit—or having a high utilization ratio—can hurt your scores, while using a small portion is best for your.</p>
+                            </div>
+
+                            <div class="using-card-inner-content">
+                                <div class="number">
+                                    <span>4</span>
+                                </div>
+
+                                <h4>Travel</h4>
+                                <p>A travel rewards credit card is a lending product that offers points and miles for traveling, including for airline, hotel, restaurant and transportation categories.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Using Card Area -->
+{% endblock %}
