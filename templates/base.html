@@ -33,7 +33,7 @@
         <!-- Responsive CSS -->
 		<link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
 
-		<title>Leve - Online Banking & Financial Services</title>
+		<title>Crest Capital Bank - Online Banking & Financial Services</title>
 
         <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
     </head>
@@ -228,62 +228,6 @@
                                         </a>
                                     </li>
 
-{#                                    <li class="nav-item">#}
-{#                                        <a href="#" class="nav-link">#}
-{#                                            Pages#}
-{#                                            <i class='bx bx-chevron-down'></i>#}
-{#                                        </a>#}
-{##}
-{#                                        <ul class="dropdown-menu">#}
-{#                                            <li class="nav-item">#}
-{#                                                <a href="{% url 'about' %}"#}
-{#                                                    {% if 'about' in request.path %}#}
-{#                                                        class="nav-link active"#}
-{#                                                    {% else %}#}
-{#                                                        class="nav-link"#}
-{#                                                    {% endif %}#}
-{#                                                >#}
-{#                                                    About#}
-{#                                                </a>#}
-{#                                            </li>#}
-
-{#                                            <li class="nav-item">#}
-{#                                                <a href="{% url 'team' %}"#}
-{#                                                    {% if 'team' in request.path %}#}
-{#                                                        class="nav-link active"#}
-{#                                                    {% else %}#}
-{#                                                        class="nav-link"#}
-{#                                                    {% endif %}#}
-{#                                                >#}
-{#                                                    Team#}
-{#                                                </a>#}
-{#                                            </li>#}
-
-{#                                            <li class="nav-item">#}
-{#                                                <a href="security.html" class="nav-link">#}
-{#                                                    Security#}
-{#                                                </a>#}
-{#                                            </li>#}
-{##}
-{#                                            <li class="nav-item">#}
-{#                                                <a href="my-account.html" class="nav-link">#}
-{#                                                    My Account#}
-{#                                                </a>#}
-{#                                            </li>#}
-{##}
-{#                                            <li class="nav-item">#}
-{#                                                <a href="faq.html" class="nav-link">#}
-{#                                                    FAQ#}
-{#                                                </a>#}
-{#                                            </li>#}
-{##}
-{#                                            <li class="nav-item">#}
-{#                                                <a href="privacy-policy.html" class="nav-link">#}
-{#                                                    Privacy Policy#}
-{#                                                </a>#}
-{#                                            </li>#}
-{#                                        </ul>#}
-{#                                    </li>#}
 
                                     <li class="nav-item">
                                         <a href="{% url 'contact' %}"
@@ -368,32 +312,10 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-footer-widget">
                             <div class="footer-logo">
-                                <h2><a href="index.html">Leve</a></h2>
-
-{#                                <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua.</p>#}
-
-{#                                <ul class="social">#}
-{#                                    <li>#}
-{#                                        <a href="#" class="facebook" target="_blank">#}
-{#                                            <i class='bx bxl-facebook'></i>#}
-{#                                        </a>#}
-{#                                    </li>#}
-{#                                    <li>#}
-{#                                        <a href="#" class="twitter" target="_blank">#}
-{#                                            <i class='bx bxl-twitter'></i>#}
-{#                                        </a>#}
-{#                                    </li>#}
-{#                                    <li>#}
-{#                                        <a href="#" class="pinterest" target="_blank">#}
-{#                                            <i class='bx bxl-instagram'></i>#}
-{#                                        </a>#}
-{#                                    </li>#}
-{#                                    <li>#}
-{#                                        <a href="#" class="linkedin" target="_blank">#}
-{#                                            <i class='bx bxl-linkedin'></i>#}
-{#                                        </a>#}
-{#                                    </li>#}
-{#                                </ul>#}
+                                <h2><a href="/">Crest Capital Bank</a></h2>
+                                <p><small>We believe everyone should have a chance to build personal wealth regardless of their
+                                    circumstances. Our team is committed to helping each client achieve that because our quality
+                                    banking services are built upon a deep belief in our wealth building mission.</small></p>
                             </div>
                         </div>
                     </div>
@@ -430,56 +352,26 @@
 
                             <ul class="quick-links">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">Credit cards</a>
+                                    <a href="{% url 'cards' %}">Credit cards</a>
                                 </li>
                                 <li>
-                                    <a href="#">Services</a>
+                                    <a href="{% url 'services' %}">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">About</a>
+                                    <a href="{% url 'about' %}">About</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact</a>
+                                    <a href="{% url 'contact' %}">Contact</a>
                                 </li>
                                 <li>
-                                    <a href="#">Online banking</a>
+                                    <a href="{% url 'login' %}">Online banking</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-
-{#                    <div class="col-lg-3 col-sm-6">#}
-{#                        <div class="single-footer-widget">#}
-{#                            <h3>Help & guidance</h3>#}
-{##}
-{#                            <ul class="quick-links">#}
-{#                                <li>#}
-{#                                    <a href="#">Privacy statement</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a href="#">Corporate information</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a href="#">Online banking help</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a href="#">Managing your money</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a href="#">Proving your identity</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a href="#">International banking</a>#}
-{#                                </li>#}
-{#                                <li>#}
-{#                                    <a href="#">Help centre</a>#}
-{#                                </li>#}
-{#                            </ul>#}
-{#                        </div>#}
-{#                    </div>#}
                 </div>
             </div>
         </section>
@@ -491,8 +383,9 @@
                 <div class="copyright-area-content">
                     <p>
                         <i class='bx bx-copyright'></i>
-                        Copyright @2020 Leve Banking. All Rights Reserved
-{#                        <a href="{% url 'home' %}" target="_blank">Leve</a>#}
+                        Copyright @2021 Crest Capital Bank. All Rights Reserved
+                        <img src="https://www.bankofcolorado.com/sites/default/files/styles/pinn_footer__icon/public/footer_icons/EqualHousingLogo_50px.png?itok=6A9cFv1P" alt="">
+                        <img src="https://www.bankofcolorado.com/sites/default/files/styles/pinn_footer__icon/public/footer_icons/MemberFDIC_50px.png?itok=rgFsq5aB" alt="">
                     </p>
                 </div>
             </div>

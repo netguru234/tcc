@@ -29,7 +29,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "thecrestcapital.herokuapp.com",
     "thecrestcapital.com",
-    "www.thecrestcapital.com"
+    "www.thecrestcapital.com",
+    "localhost"
 ]
 
 
