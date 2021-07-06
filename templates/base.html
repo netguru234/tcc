@@ -50,51 +50,7 @@
         <!-- End Preloader Area -->
 
         <!-- Start Top Header Area -->
-        <div class="top-header-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <ul class="top-header-information">
-                            {% if "dashboard" not in request.path %}
-                                <!-- <li>
-                                    <i class='bx bx-envelope'></i>
-                                    <a href="mailto:{{ site_info.email }}">{{ site_info.email }}</a>
-                                </li>
-
-                                <li>
-                                    <i class='bx bxs-phone'></i>
-                                    <a href="tel:{{ site_info.phone }}">{{ site_info.phone }}</a>
-                                </li> -->
-                            {% endif %}
-                        </ul>
-                    </div>
-
-                    <div class="col-lg-6 text-right">
-                        <ul class="top-header-others">
-{#                            <li>#}
-{#                                <i class='bx bxs-map'></i>#}
-{#                                <a href="atm-and-bank-locations.html">ATMs location</a>#}
-{#                            </li>#}
-{##}
-{#                            <li class="languages-list">#}
-{#                                <select>#}
-{#                                    <option value="1">English</option>#}
-{#                                    <option value="2">Germany</option>#}
-{#                                    <option value="3">Australia</option>#}
-{#                                </select>#}
-{#                            </li>#}
-
-                            <li>
-                                {% if not user.is_authenticated %}
-                                    <i class='bx bx-user'></i>
-                                    <a href="{% url 'login' %}">Sign In</a>
-                                {% endif %}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- End Top Header Area -->
 
         <!-- Start Navbar Area -->
@@ -384,8 +340,8 @@
                     <p>
                         <i class='bx bx-copyright'></i>
                         Copyright @2021 Crest Capital Bank. All Rights Reserved
-                        <img src="https://www.bankofcolorado.com/sites/default/files/styles/pinn_footer__icon/public/footer_icons/EqualHousingLogo_50px.png?itok=6A9cFv1P" alt="">
-                        <img src="https://www.bankofcolorado.com/sites/default/files/styles/pinn_footer__icon/public/footer_icons/MemberFDIC_50px.png?itok=rgFsq5aB" alt="">
+                        <img src="https://www.jonah.bank/sites/www.jonah.bank/themes/composerv1/images/ehl.svg" alt="" width="80" height="80">
+                        <img src="https://www.jonah.bank/sites/www.jonah.bank/themes/composerv1/images/fdic.svg" alt="" width="80" height="80">
                     </p>
                 </div>
             </div>
