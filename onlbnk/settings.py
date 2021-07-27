@@ -30,7 +30,7 @@ ALLOWED_HOSTS = [
     "thecrestcapital.herokuapp.com",
     "thecrestcapital.com",
     "www.thecrestcapital.com",
-    # "localhost"
+    "localhost"
 ]
 
 
